@@ -1,0 +1,194 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Co-workers</title>
+    <style>
+    body {
+        font-family: sans-serif;
+    }
+    .couloire {
+        width: 400px;
+    }
+    .open-space {
+        width: 800px;
+    }
+    .desk-row {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+    }
+    .desk-space, .desk {
+        width: 200;
+        height: 80px;
+        margin: 5px;
+        text-align: center;
+        line-height: 80px;
+    }
+    .desk {
+        background-color: #F5E4DF;
+        cursor: pointer;
+    }
+    .end {
+        align-self: flex-end;
+        margin-right: 100px;
+    }
+    .front {
+        margin-top: 20px;
+    }
+    .back {
+        margin-bottom: 20px;
+    }
+    .front .desk  {
+        border-bottom: 5px solid #d0c0b0;
+    }
+    .back .desk  {
+        border-top: 5px solid #d0c0b0;
+    }
+    .space {
+        height: 40px;
+    }
+
+    .rotate {
+        transform: rotate(-90deg);
+        height: 1200px;
+        width: 1200px;
+    }
+
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+    <script>
+        $(function() {
+            $(".desk").click(function() {
+                window.open("http://www.google.com/search?tbm=isch&q="+$(this).text());
+            })
+        })
+    </script>
+
+<h1>Open Space</h1>
+
+<div class="open-space rotate">
+
+    <div class="desk-row front">
+        <div class="desk">Aaaaaa BBBBBBBB</div>
+        <div class="desk">Aaaaaa BBBBBBBB</div>
+
+        <div class="desk">Aaaaaa BBBBBBBB</div>
+        <div class="desk">Aaaaaa BBBBBBBB</div>
+        <div class="desk">Aaaaaa BBBBBBBB</div>
+    </div> <!-- .desk-row.front -->
+    <div class="desk-row back">
+        <div class="desk">Aaaaaa BBBBBBBB</div>
+        <div class="desk">Aaaaaa BBBBBBBB</div>
+
+        <div class="desk">Aaaaaa BBBBBBBB</div>
+        <div class="desk">Aaaaaa BBBBBBBB</div>
+        <div class="desk">Aaaaaa BBBBBBBB</div>
+    </div> <!-- .desk-row.back -->
+
+
+    <div class="space"></div>
+
+    <div class="desk-row front">
+        <div class="desk">Aaaaaa BBBBBBBB</div>
+        <div class="desk">Aaaaaa BBBBBBBB</div>
+
+        <div class="desk">Aaaaaa BBBBBBBB</div>
+        <div class="desk">Aaaaaa BBBBBBBB</div>
+        <div class="desk">Aaaaaa BBBBBBBB</div>
+    </div> <!-- .desk-row.front -->
+    <div class="desk-row back">
+        <div class="desk">Aaaaaa BBBBBBBB</div>
+        <div class="desk">Aaaaaa BBBBBBBB</div>
+
+        <div class="desk">Aaaaaa BBBBBBBB</div>
+        <div class="desk">Aaaaaa BBBBBBBB</div>
+        <div class="desk">Aaaaaa BBBBBBBB</div>
+    </div> <!-- .desk-row.back -->
+
+    <div class="space"></div>
+
+    <div class="desk-row front">
+        <div class="desk">Aaaaaa BBBBBBBB</div>
+
+        <div class="desk">Aaaaaa BBBBBBBB</div>
+        <div class="desk">Aaaaaa BBBBBBBB</div>
+    </div> <!-- .desk-row.front -->
+    <div class="desk-row back">
+        <div class="desk">Aaaaaa BBBBBBBB</div>
+
+        <div class="desk">Aaaaaa BBBBBBBB</div>
+        <div class="desk">Aaaaaa BBBBBBBB</div>
+    </div> <!-- .desk-row.back -->
+
+
+    <div class="space"></div>
+
+    <div class="desk-row front">
+        <div class="desk-space"> </div>
+
+        <div class="desk">Aaaaaa BBBBBBBB</div>
+        <div class="desk">Aaaaaa BBBBBBBB</div>
+    </div> <!-- .desk-row.front -->
+    <div class="desk-row back">
+        <div class="desk-space"> </div>
+
+        <div class="desk">Aaaaaa BBBBBBBB</div>
+        <div class="desk">Aaaaaa BBBBBBBB</div>
+    </div> <!-- .desk-row.back -->
+
+    <div class="space"></div>
+
+    <div class="desk-row front">
+        <div class="desk">Aaaaaa BBBBBBBB</div>
+    </div> <!-- .desk-row.front -->
+    <div class="desk-row back">
+        <div class="desk">Aaaaaa BBBBBBBB</div>
+    </div> <!-- .desk-row.back -->
+
+
+
+</div> <!-- .open-space -->
+
+<hr/>
+
+<h1>Couloir</h1>
+
+<div class="couloire">
+
+    <div class="desk-row front">
+        <div class="desk">Aaaaaa BBBBBBBB</div>
+        <div class="desk">Aaaaaa BBBBBBBB</div>
+    </div> <!-- .desk-row.front -->
+    <div class="desk-row back">
+        <div class="desk">Aaaaaa BBBBBBBB</div>
+        <div class="desk">Aaaaaa BBBBBBBB</div>
+    </div> <!-- .desk-row.back -->
+
+
+    <div class="space"></div>
+
+    <div class="desk-row front">
+        <div class="desk">Aaaaaa BBBBBBBB</div>
+        <div class="desk">Aaaaaa BBBBBBBB</div>
+    </div> <!-- .desk-row.front -->
+    <div class="desk-row back">
+        <div class="desk">Aaaaaa BBBBBBBB</div>
+        <div class="desk">Aaaaaa BBBBBBBB</div>
+    </div> <!-- .desk-row.back -->
+
+    <div class="desk-row front">
+        <div class="desk">Aaaaaa BBBBBBBB</div>
+        <div class="desk">Aaaaaa BBBBBBBB</div>
+    </div> <!-- .desk-row.front -->
+    <div class="desk-row back">
+        <div class="desk">Aaaaaa BBBBBBBB</div>
+        <div class="desk">Aaaaaa BBBBBBBB</div>
+    </div> <!-- .desk-row.back -->
+
+</div> <!-- .open-space -->
+
+</body>
+</html>
